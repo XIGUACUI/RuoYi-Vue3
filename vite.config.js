@@ -31,7 +31,8 @@ export default defineConfig(({ mode, command }) => {
       proxy: {
         // https://cn.vitejs.dev/config/#server-proxy
         '/dev-api': {
-          target: 'http://localhost:8080',
+          // target: 'http://localhost:8080',
+          target: 'http://116.205.129.247:8085',  //华富村地址
           changeOrigin: true,
           rewrite: (p) => p.replace(/^\/dev-api/, '')
         }
